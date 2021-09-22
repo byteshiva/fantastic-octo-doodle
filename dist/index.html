@@ -9,19 +9,23 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div id="flipbook">
-		<div class="hard"> Flip Book Sample </div>
-		<div class="hard"></div>
-
-		<div class="pg1"><img src="img/temp-001.png" alt="" /></div>
-		<div class="pg2"><img src="img/temp-002.png" alt="" /></div>
-		<div class="pg3"><img src="img/temp-003.png" alt="" /></div>
-		<div class="pg4"><img src="img/temp-004.png" alt="" /></div>
-		<div class="pg5"><img src="img/temp-005.png" alt="" /></div>
-
-		<div class="hard"></div>
-		<div class="hard"></div>
+<div class="wrapper">
+  <div class="aspect">
+    <div class="aspect-inner">
+      <div class="flipbook" id="flipbook">
+        <div class="page"><img src="img/temp-001.png" alt="" draggable="false" /></div>
+	<div class="page"><img src="img/temp-002.png" alt="" draggable="false" /></div>
+	<div class="page"><img src="img/temp-003.png" alt="" draggable="false" /></div>
+	<div class="page"><img src="img/temp-004.png" alt="" draggable="false" /></div>
+	<div class="page"><img src="img/temp-005.png" alt="" draggable="false" /></div>
+	<div class="page"><img src="img/temp-006.png" alt="" draggable="false" /></div>	      
+      </div>
+    </div>
+  </div>
 </div>
+	
+	
+	
 <hr/> Page:
 <input type="number" id="pageFld" min=1/>
 <button id="prevBtn">Previous</button>
