@@ -1,4 +1,4 @@
-$(flipbookEL).turn({
+$("#flipbook").turn({
 	width: 800,
 	height: 400,
 	autoCenter: true
