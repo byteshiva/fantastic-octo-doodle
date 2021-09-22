@@ -1,16 +1,7 @@
-var flipbookEL = document.getElementById('flipbook');
-
-// window.addEventListener('resize', function (e) {
-// 	flipbookEL.style.width = '';
-//   	flipbookEL.style.height = '';
-//   	$(flipbookEL).turn('size', flipbookEL.clientWidth, flipbookEL.clientHeight);
-// });
-
 $(flipbookEL).turn({
-	width: 800px,
-	height: 400px,
-		
-    autoCenter: true
+	width: 800,
+	height: 400,
+	autoCenter: true
 });
 
 
