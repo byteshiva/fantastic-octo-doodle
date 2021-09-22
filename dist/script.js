@@ -1,8 +1,15 @@
-$("#flipbook").turn({
-		width: 400,
-		height: 300,
-		autoCenter: true
+var flipbookEL = document.getElementById('flipbook');
+
+window.addEventListener('resize', function (e) {
+	flipbookEL.style.width = '';
+  	flipbookEL.style.height = '';
+  	$(flipbookEL).turn('size', flipbookEL.clientWidth, flipbookEL.clientHeight);
 });
+
+$(flipbookEL).turn({
+    autoCenter: true
+});
+
 
 $("#pageFld").val($("#flipbook").turn("page"));
 
